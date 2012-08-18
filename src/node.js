@@ -140,14 +140,6 @@
     }
   }
 
-  startup.globalVariables = function() {
-    global.process = process;
-    global.global = global;
-    global.GLOBAL = global;
-    global.root = global;
-    global.Buffer = NativeModule.require('buffer').Buffer;
-  };
-
   startup.globalTimeouts = function() {
     global.setTimeout = function() {
       var t = NativeModule.require('timers');
