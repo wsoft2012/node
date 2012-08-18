@@ -58,18 +58,6 @@
 # define SIGKILL         9
 #endif
 
-#include "uv.h"
-#include "v8.h"
-#include <sys/types.h> /* struct stat */
-#include <sys/stat.h>
-#include <assert.h>
-
-#include "node_object_wrap.h"
-
-#if NODE_WANT_INTERNALS
-# include "node_internals.h"
-#endif
-
 #ifndef NODE_STRINGIFY
 #define NODE_STRINGIFY(n) NODE_STRINGIFY_HELPER(n)
 #define NODE_STRINGIFY_HELPER(n) #n
