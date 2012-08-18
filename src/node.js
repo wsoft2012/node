@@ -38,22 +38,6 @@
 
     process.EventEmitter = EventEmitter; // process.EventEmitter is deprecated
 
-    startup.globalVariables();
-    startup.globalTimeouts();
-    startup.globalConsole();
-
-    startup.processAssert();
-    startup.processConfig();
-    startup.processNextTick();
-    startup.processMakeCallback();
-    startup.processStdio();
-    startup.processKillAndExit();
-    startup.processSignalHandlers();
-
-    startup.processChannel();
-
-    startup.resolveArgv0();
-
     // There are various modes that Node can run in. The most common two
     // are running from a script and running the REPL - but there are a few
     // others like the debugger or running --eval arguments. Here we decide
